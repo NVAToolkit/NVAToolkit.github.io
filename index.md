@@ -1,24 +1,24 @@
 ---
 layout: page
-title: ARTToolkit
+title: NVAToolkit
 ---
 
 ![logo](/assets/logo.png){:.logo}
 
-A RedTeam Toolkit is an interactive cheat sheet, containing a useful list of offensive security tools and their respective commands/payloads, to be used in red teaming exercises.
+A Network Penetration Testing Toolkit is an interactive cheat sheet, containing a curated list of tools, commands, and payloads specifically for network security assessments and penetration testing engagements.
 
-If you hate constantly looking up the right command to use against a Windows, Linux, or Active Directory environment (like me), this project should help ease the pain a bit. Just select what information you currently have related to the victim machine (passwords, usernames, services, etc.), and it will display a list of tools you can try against the machine, along with a template command for easy copy/pasting. See the full list of [items](/items/) and [filters](/filters/).
+If you often find yourself searching for the right command to use against network devices, servers, or infrastructure, this project aims to simplify your workflow. Just select the information you have about the target environment (such as credentials, services, or open ports), and NVAToolkit will display relevant tools and template commands for quick reference and easy copy/pasting. See the full list of [items](/items/) and [filters](/filters/).
 
-This project was created by [Maurits Maas](https://www.linkedin.com/in/maurits-maas/) and was inspired by [GTFOBins][GTFOBins], and [LOLBAS][LOLBAS]. I relied heavily on [WADComs'][WADComs] site template to make this one.
+This project was created by [Gnanaraj Mauviel aka 0xm3m](https://www.linkedin.com/in/gnanaraj-mauviel/) and was inspired by [GTFOBins][GTFOBins], and [LOLBAS][LOLBAS]. The [WADComs'][WADComs] site template was heavily used in building this toolkit.
 
-I'm hoping to make ARTToolkit a [collaborative project][collaborative], so please feel free to [contribute][contribute] your commands.
+NVAToolkit is intended as a [collaborative project][collaborative], so contributions of new commands and tools are welcome. Please feel free to [contribute][contribute]!
 
 [items]: /items/
 [filters]: /filters/
 [GTFOBins]: https://gtfobins.github.io/
 [LOLBAS]: https://lolbas-project.github.io/
 [WADComs]: https://wadcoms.github.io/
-[collaborative]: https://github.com/arttoolkit/arttoolkit.github.io
+[collaborative]: https://github.com/NVAtoolkit/nvatoolkit.github.io
 [contribute]: /contribute/
 
 {% include bin_table.html %}

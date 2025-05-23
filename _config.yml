@@ -1,5 +1,5 @@
 ---
-title: ARTToolkit
+title: NVAToolkit
 
 exclude: ['/scripts', '/Gemfile', '/Makefile', '/README.md']
 

@@ -1,9 +1,9 @@
-# A RedTeam Toolkit
+# Network Pentest Toolkit
 
-ARTToolkit is an interactive cheat sheet, containing an useful list of offensive security tools and their respective commands/payloads, to be used in red teaming exercises.
+NVAToolkit is an interactive reference guide featuring a curated collection of tools, commands, and payloads specifically for network penetration testing. It is designed to assist security professionals in assessing, exploiting, and securing network infrastructures during engagements.
 
-Find the project at https://NVAToolkit.github.io
+Explore the project at https://NVAToolkit.github.io
 
-Created by [Maurits Maas](https://www.linkedin.com/in/maurits-maas/)
+Created by [Gnanaraj Mauviel aka 0xm3m](https://www.linkedin.com/in/gnanaraj-mauviel/)
 
-This project was based on the creation of John Woodman and was inspired by GTFOBins and LOLBAS. I relied heavily on WADComs site template to make this one.
+This project builds upon the work of John Woodman and draws inspiration from resources like GTFOBins, LOLBAS, and the WADComs site template.
