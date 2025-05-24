@@ -12,13 +12,8 @@ layout: common
 
 Command:
 <a href="javascript:void(0)" onClick="copyFunction_com()" style="float: right; margin-bottom: -10px;"><img src="/assets/copy-button.svg" alt="Copy" title="Copy" id="code_img"/></a>
-<pre><code class="command-code" id="code_text">
-{% for cmd in page.command %}
-{{ cmd }}
-{% endfor %}
-</code></pre>
+<pre><code class="command-code" id="code_text">{{ page.command }}</code></pre>
 
-{% if page.code %}
 Extra code:
 <a href="javascript:void(0)" onClick="copyFunction_com()" style="float: right; margin-bottom: -10px;"><img src="/assets/copy-button.svg" alt="Copy" title="Copy" id="code_img"/></a>
 <ul class="examples">
