@@ -7,9 +7,11 @@ description: |
       Target IP: 10.10.10.1
 
 command: |
-  nmap -Pn -p 21 -sV 10.10.10.1 
-  | nc -vn 10.10.10.1 21
-  | openssl s_client -connect 10.10.10.1:21 -starttls ftp
+  nmap -Pn -p 21 -sV 10.10.10.1
+
+  nc -vn 10.10.10.1 21
+
+  openssl s_client -connect 10.10.10.1:21 -starttls ftp
 items:
   - No_Creds
 services:
