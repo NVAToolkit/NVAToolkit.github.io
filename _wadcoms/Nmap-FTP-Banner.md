@@ -13,7 +13,9 @@ items:
 services:
   - FTP
 OS:
-  - Linux, Windows, Mac
+  - Linux
+  - Windows
+  - Mac
 attack_types:
   - Enumeration
 references:

@@ -5,11 +5,14 @@ description: |
 command: |
   ftp://anonymous:anonymous@10.10.10.98
 items:
-  - Username, Password
+  - Username
+  - Password
 services:
   - FTP
 OS:
-  - Linux, Windows, Mac
+  - Linux
+  - Windows
+  - Mac
 attack_types:
   - Enumeration
 references:
