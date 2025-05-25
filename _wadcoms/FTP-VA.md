@@ -8,6 +8,10 @@ description: |
 
 command: |
   nmap -Pn -p 21 --script="ftp-anon,ftp-bounce,ftp-brute,ftp-libopie,ftp-proftpd-backdoor,ftp-syst,ftp-vsftpd-backdoor,ftp-vuln-cve2010-4221" -sV 10.10.10.1
+
+code: |
+  nmap -Pn -p 21 --script vuln -sV 10.10.10.1
+
 items:
   - No_Creds
 services:

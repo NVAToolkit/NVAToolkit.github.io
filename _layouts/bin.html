@@ -11,16 +11,24 @@ layout: common
 {{ page.description | markdownify }}
 
 Command:
-<a href="javascript:void(0)" onClick="copyFunction_com()" style="float: right; margin-bottom: -10px;"><img src="/assets/copy-button.svg" alt="Copy" title="Copy" id="code_img"/></a>
-<pre><code class="command-code" id="code_text">{{ page.command }}</code></pre>
-
-Extra code:
-<a href="javascript:void(0)" onClick="copyFunction_com()" style="float: right; margin-bottom: -10px;"><img src="/assets/copy-button.svg" alt="Copy" title="Copy" id="code_img"/></a>
+<a href="javascript:void(0)" onClick="copyFunction_com()" style="float: right; margin-bottom: -10px;">
+  <img src="/assets/copy-button.svg" alt="Copy" title="Copy" id="code_img"/>
+</a>
 <ul class="examples">
-    <li>
-	<pre><code id="code_text">{{ page.code | escape }}</code></pre>
-    </li>
+  <li>
+    <pre><code id="code_text">{{ page.command }}</code></pre>
+  </li>
+</ul>
 
+{% if page.code %}
+Extra code:
+<a href="javascript:void(0)" onClick="copyFunction_code()" style="float: right; margin-bottom: -10px;">
+  <img src="/assets/copy-button.svg" alt="Copy" title="Copy" id="code_img_extra"/>
+</a>
+<ul class="examples">
+  <li>
+    <pre><code id="code_text_extra">{{ page.code }}</code></pre>
+  </li>
 </ul>
 {% endif %}
 
@@ -32,16 +40,29 @@ References:
 <br>
 <br>
 {% endfor %}
+
 <script>
-
 function copyFunction_com() {
-	 var copyCommand = document.getElementById("code_text");
+  var copyCommand = document.getElementById("code_text");
+  var text = copyCommand.innerText || copyCommand.textContent;
+  navigator.clipboard.writeText(text.trim()).then(() => {
+    document.getElementById("code_img").alt = "Copied";
+    document.getElementById("code_img").title = "Copied";
+  }, () => {
+    document.getElementById("code_img").title = "Copy failed";
+    console.log("copy failed");
+  });
+}
 
-		 document.getElementById("code_img").alt = "Copied";replace(/\n+$/, "")).then(() => {
-		 document.getElementById("code_img").title = "Copied";
-	 }, () => {getElementById("code_img").title = "Copied";
-		 console.log("copy failed");
-	 });nsole.log("copy failed");
-} });
-</script>
+function copyFunction_code() {
+  var copyCommand = document.getElementById("code_text_extra");
+  var text = copyCommand.innerText || copyCommand.textContent;
+  navigator.clipboard.writeText(text.trim()).then(() => {
+    document.getElementById("code_img_extra").alt = "Copied";
+    document.getElementById("code_img_extra").title = "Copied";
+  }, () => {
+    document.getElementById("code_img_extra").title = "Copy failed";
+    console.log("copy failed");
+  });
+}
 </script>

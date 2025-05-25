@@ -4,6 +4,8 @@ description: |
 
 command: |
   wget -m ftp://anonymous:anonymous@10.10.10.98
+
+code: |
   wget -m --no-passive ftp://anonymous:anonymous@10.10.10.98
   wget -r --user="USERNAME" --password="PASSWORD" ftp://server.com/
 items:
